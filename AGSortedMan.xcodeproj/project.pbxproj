@@ -14,6 +14,8 @@
 		3A1E14701E681E9E005D1323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A1E146F1E681E9E005D1323 /* Assets.xcassets */; };
 		3A1E14731E681E9E005D1323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1E14711E681E9E005D1323 /* LaunchScreen.storyboard */; };
 		3A1E147E1E681E9E005D1323 /* AGSortedManTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E147D1E681E9E005D1323 /* AGSortedManTests.m */; };
+		3A1E148B1E682109005D1323 /* NSArray+PinyinSorte.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E148A1E682109005D1323 /* NSArray+PinyinSorte.m */; };
+		3A1E148F1E682140005D1323 /* AGStudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E148E1E682140005D1323 /* AGStudentModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		3A1E14791E681E9E005D1323 /* AGSortedManTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGSortedManTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1E147D1E681E9E005D1323 /* AGSortedManTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGSortedManTests.m; sourceTree = "<group>"; };
 		3A1E147F1E681E9E005D1323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A1E14891E682109005D1323 /* NSArray+PinyinSorte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PinyinSorte.h"; sourceTree = "<group>"; };
+		3A1E148A1E682109005D1323 /* NSArray+PinyinSorte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PinyinSorte.m"; sourceTree = "<group>"; };
+		3A1E148D1E682140005D1323 /* AGStudentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGStudentModel.h; sourceTree = "<group>"; };
+		3A1E148E1E682140005D1323 /* AGStudentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGStudentModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 		3A1E14621E681E9E005D1323 /* AGSortedMan */ = {
 			isa = PBXGroup;
 			children = (
+				3A1E148C1E682140005D1323 /* Models */,
+				3A1E14881E682109005D1323 /* AGSortedMan */,
 				3A1E14661E681E9E005D1323 /* AppDelegate.h */,
 				3A1E14671E681E9E005D1323 /* AppDelegate.m */,
 				3A1E14691E681E9E005D1323 /* ViewController.h */,
@@ -109,6 +117,24 @@
 				3A1E147F1E681E9E005D1323 /* Info.plist */,
 			);
 			path = AGSortedManTests;
+			sourceTree = "<group>";
+		};
+		3A1E14881E682109005D1323 /* AGSortedMan */ = {
+			isa = PBXGroup;
+			children = (
+				3A1E14891E682109005D1323 /* NSArray+PinyinSorte.h */,
+				3A1E148A1E682109005D1323 /* NSArray+PinyinSorte.m */,
+			);
+			path = AGSortedMan;
+			sourceTree = "<group>";
+		};
+		3A1E148C1E682140005D1323 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A1E148D1E682140005D1323 /* AGStudentModel.h */,
+				3A1E148E1E682140005D1323 /* AGStudentModel.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +241,9 @@
 			files = (
 				3A1E146B1E681E9E005D1323 /* ViewController.m in Sources */,
 				3A1E14681E681E9E005D1323 /* AppDelegate.m in Sources */,
+				3A1E148F1E682140005D1323 /* AGStudentModel.m in Sources */,
 				3A1E14651E681E9E005D1323 /* main.m in Sources */,
+				3A1E148B1E682109005D1323 /* NSArray+PinyinSorte.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

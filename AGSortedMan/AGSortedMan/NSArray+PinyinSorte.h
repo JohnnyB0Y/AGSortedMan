@@ -24,7 +24,7 @@
 - (NSArray<id<AGPinyinSorteProtocol>> *)ag_pinYinSortedArrayWithOptions:(NSSortOptions)opts;
 
 /** 按拼音首字母分割的数组列表 */
-- (NSArray<NSArray<id<AGPinyinSorteProtocol>> *> *)ag_pinYinSortedArrays;
+- (NSArray<NSArray<id<AGPinyinSorteProtocol>> *> *)ag_pinYinSortedArrayList;
 
 @end
 

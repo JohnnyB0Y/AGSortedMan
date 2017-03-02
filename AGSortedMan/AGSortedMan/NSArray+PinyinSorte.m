@@ -28,18 +28,18 @@
         if ( ! locale ) {
             locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
         }
-        static NSStringCompareOptions comparisonOptions =  NSNumericSearch;
+        static NSStringCompareOptions comparisonOptions =  NSForcedOrderingSearch;
         NSString *str1 = [self _pinyinStrFromModel:obj1];
         NSString *str2 = [self _pinyinStrFromModel:obj2];
         NSRange string1Range = NSMakeRange(0, [str1 length]);
         return [str1 compare:str2 options:comparisonOptions range:string1Range
-                      locale:(NSLocale *)locale];
+                      locale:locale];
     }];
     
 }
 
-/** 按拼音分割的数组列表 */
-- (NSArray<NSArray<id<AGPinyinSorteProtocol>> *> *)ag_pinYinSortedArrays
+/** 按拼音首字母分割的数组列表 */
+- (NSArray<NSArray<id<AGPinyinSorteProtocol>> *> *)ag_pinYinSortedArrayList
 {
     // 无元素直接返回
     if (self.count < 1) return nil;
@@ -49,22 +49,30 @@
     
     // 分割成数组
     NSMutableArray *arrM = [NSMutableArray arrayWithCapacity:10];
-    __block NSMutableArray *subArrM = [NSMutableArray arrayWithCapacity:5];
-    __block NSString *firsterLetter = [[arr firstObject] firstLetter];
+    __block NSMutableArray *subArrM = nil;
+    __block NSString *firsterLetter = nil;
     [arr enumerateObjectsUsingBlock:^(id<AGPinyinSorteProtocol>  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         if ( [[obj firstLetter] isEqualToString:firsterLetter] ) {
             // 相同字母
             [subArrM addObject:obj];
+            
         } else {
             // 不同字母
             firsterLetter = [obj firstLetter];
-            [arrM addObject:[subArrM copy]];
             subArrM = [NSMutableArray arrayWithCapacity:5];
             [subArrM addObject:obj];
+            [arrM addObject:subArrM];
+            
         }
         
     }];
+    
+    // 把#分类放到最后，如果有
+    if ( [arrM count] > 1 && [[[[arrM firstObject] firstObject] firstLetter] isEqualToString:@"#"] ) {
+        [arrM addObject:[arrM firstObject]];
+        [arrM removeObjectAtIndex:0];
+    }
     
     return [arrM copy];
 }
@@ -74,8 +82,8 @@
     NSString *pinyinStr = nil;
     
     if ( [model respondsToSelector:@selector(setPinyin:)] &&
-        [model respondsToSelector:@selector(pinyin)] &&
-        [model respondsToSelector:@selector(sortedStr)] ) {
+         [model respondsToSelector:@selector(pinyin)] &&
+         [model respondsToSelector:@selector(sortedStr)] ) {
         
         pinyinStr = [model pinyin];
         if ( ! pinyinStr ) {
@@ -85,11 +93,11 @@
             // 首字母
             if ( [model respondsToSelector:@selector(setFirstLetter:)] ) {
                 
-                unichar firsterChar = [pinyinStr characterAtIndex:0];
+                unichar fC = [pinyinStr characterAtIndex:0];
                 
-                if ( ( firsterChar >= 97 && firsterChar <= 122 ) ) {
+                if ( ( fC >= 65 && fC <= 90 ) || ( fC >= 97 && fC <= 122 ) ) {
                     
-                    [model setFirstLetter:[[NSString stringWithFormat:@"%c", firsterChar] uppercaseString]];
+                    [model setFirstLetter:[[NSString stringWithFormat:@"%c", fC] uppercaseString]];
                 } else {
                     static NSString *wellStr = @"#";
                     [model setFirstLetter:wellStr];
