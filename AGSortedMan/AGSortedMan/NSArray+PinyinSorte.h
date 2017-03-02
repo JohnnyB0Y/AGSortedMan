@@ -1,6 +1,6 @@
 //
 //  NSArray+PinyinSorte.h
-//  test22
+//  AGSortedMan
 //
 //  Created by JohnnyB0Y on 2017/3/1.
 //  Copyright © 2017年 JohnnyB0Y. All rights reserved.

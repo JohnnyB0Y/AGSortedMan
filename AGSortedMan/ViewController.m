@@ -82,12 +82,11 @@
 }
 
 - (void)testWithDataSize:(NSInteger)size {
-    // Do any additional setup after loading the view, typically from a nib.
-    //return;
+    
     // 生成数据
     NSString *chineseStr = @"？？呢吗！@#￥可是%怀孕…撕逼&*（）——+👌😝1234嗯不尔瀑布步步JJCKAndy惊魂局考虑到ijlk看到类似飞机数波波维奇罗波斯猫博士啵神伯特科比唉味儿麦迪达尔文哼哈量更赵龙好玩二铺聘请按照每年BBQ思思NBA安朵拉人人车才妈妈普多隆多川普分克里斯；";
     
-    NSMutableArray *students = [@[] mutableCopy];
+    NSMutableArray<id<AGPinyinSorteProtocol>> *students = [@[] mutableCopy];
     
     for (int i = 0; i < size; i++) {
         AGStudentModel * sm = [AGStudentModel new];

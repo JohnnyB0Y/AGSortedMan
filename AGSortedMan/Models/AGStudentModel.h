@@ -1,6 +1,6 @@
 //
 //  AGStudentModel.h
-//  test22
+//  AGSortedMan
 //
 //  Created by JohnnyB0Y on 2017/2/28.
 //  Copyright © 2017年 JohnnyB0Y. All rights reserved.
