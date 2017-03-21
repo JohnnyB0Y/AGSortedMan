@@ -8,7 +8,7 @@
 
 #### 简单使用举例
 
-```oc
+```objective-c
 - (void)testWithDataSize:(NSInteger)size {
     
     NSString *chineseStr = @"？？呢吗！@#￥可是%怀孕…撕逼&*（）——+👌😝123"\
