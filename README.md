@@ -1,4 +1,4 @@
-# AGSortedMan 通讯录-拼音排序
+# AGSortedMan 好友列表&通讯录-英文&拼音排序
 
 #### 使用步骤：
 ##### 1，导入分类头文件 #import "NSArray+PinyinSorte.h" 。
