@@ -7,8 +7,8 @@
 ##### 4，返回你想要的数据使用就是了。
 
 #### 简单使用举例
-```
 
+```oc
 - (void)testWithDataSize:(NSInteger)size {
     
     NSString *chineseStr = @"？？呢吗！@#￥可是%怀孕…撕逼&*（）——+👌😝123"\
