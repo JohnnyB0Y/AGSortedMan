@@ -19,7 +19,8 @@
     NSMutableArray<id<AGPinyinSorteProtocol>> *students = [@[] mutableCopy];
     
     for (int i = 0; i < size; i++) {
-        AGStudentModel * sm = [AGStudentModel new];
+        // AGStudentModel 是遵守了 AGPinyinSorteProtocol 协议的
+        AGStudentModel * sm = [AGStudentModel new];
         sm.age = @(arc4random_uniform(100));
         
         NSRange nameRange = NSMakeRange(arc4random_uniform((unsigned)chineseStr.length - 3), 4);
