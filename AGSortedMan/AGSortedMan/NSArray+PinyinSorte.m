@@ -17,10 +17,17 @@
 
 - (NSArray<id<AGPinyinSorteProtocol>> *)ag_pinYinSortedArrayWithOptions:(NSSortOptions)opts
 {
-    // 无元素直接返回
-    if (self.count < 1) return nil;
+    if (self.count < 1) {
+        // 无元素直接返回
+        return nil;
+    } else if ( self.count == 1 ) {
+        // 只有一个元素
+        id model = [self firstObject];
+        [self _pinyinStrFromModel:model];
+        return @[model];
+    }
     
-    // 排序
+    // 多元素排序
     return [self sortedArrayWithOptions:opts usingComparator:^NSComparisonResult(id<AGPinyinSorteProtocol>  _Nonnull obj1, id<AGPinyinSorteProtocol>  _Nonnull obj2) {
         
         //@"en_US"\@"zh_CN"];
