@@ -7,7 +7,7 @@
 //  排序者
 
 #import <Foundation/Foundation.h>
-#import "AGVMKit.h"
+#import <AGViewModel/AGVMKit.h>
 
 /** 首字母 默认大写 */
 UIKIT_EXTERN NSString * const kAGSortedManFirstLetter;

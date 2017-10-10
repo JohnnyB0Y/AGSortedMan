@@ -1,0 +1,18 @@
+PODS:
+  - AGTimerManager (0.2.0)
+  - AGVerifyManager (0.1.2)
+  - AGViewModel (0.3.9)
+
+DEPENDENCIES:
+  - AGTimerManager
+  - AGVerifyManager
+  - AGViewModel (~> 0.3.9)
+
+SPEC CHECKSUMS:
+  AGTimerManager: ce472cd6a6eaefb682b43a29f9eea371dc98847c
+  AGVerifyManager: 6fbb5c7b1f97d931751753b8e8527b79a71b0935
+  AGViewModel: 7efa2295e703c3578ec89a50d7295c1609618c3a
+
+PODFILE CHECKSUM: 6024df6dcde0fbc450f67b8b30747cb31bae8dd3
+
+COCOAPODS: 1.3.1

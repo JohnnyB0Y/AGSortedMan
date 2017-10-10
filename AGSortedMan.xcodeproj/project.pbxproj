@@ -17,12 +17,7 @@
 		3A1E148B1E682109005D1323 /* NSArray+PinyinSorte.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E148A1E682109005D1323 /* NSArray+PinyinSorte.m */; };
 		3A1E148F1E682140005D1323 /* AGStudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E148E1E682140005D1323 /* AGStudentModel.m */; };
 		3A9899651F8CEDC60004BC7B /* AGSortedMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9899631F8CEDC60004BC7B /* AGSortedMan.m */; };
-		3A98998B1F8CF1AA0004BC7B /* AGVMNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A98997D1F8CF1690004BC7B /* AGVMNotifier.m */; };
-		3A98998C1F8CF1B10004BC7B /* AGViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9899811F8CF1690004BC7B /* AGViewModel.m */; };
-		3A98998D1F8CF1B50004BC7B /* AGVMSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9899831F8CF1690004BC7B /* AGVMSection.m */; };
-		3A98998E1F8CF1B90004BC7B /* AGVMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9899841F8CF1690004BC7B /* AGVMManager.m */; };
-		3A98998F1F8CF1BD0004BC7B /* AGVMPackager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9899851F8CF1690004BC7B /* AGVMPackager.m */; };
-		3A9899901F8CF1C20004BC7B /* NSString+AGCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9899891F8CF1690004BC7B /* NSString+AGCalculate.m */; };
+		45449421CF68CFDBD01E42B9 /* libPods-AGSortedMan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B73228087ABAE07ADBEE2290 /* libPods-AGSortedMan.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,21 +50,9 @@
 		3A1E148E1E682140005D1323 /* AGStudentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGStudentModel.m; sourceTree = "<group>"; };
 		3A9899631F8CEDC60004BC7B /* AGSortedMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGSortedMan.m; sourceTree = "<group>"; };
 		3A9899641F8CEDC60004BC7B /* AGSortedMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGSortedMan.h; sourceTree = "<group>"; };
-		3A98997C1F8CF1690004BC7B /* AGVMSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGVMSection.h; sourceTree = "<group>"; };
-		3A98997D1F8CF1690004BC7B /* AGVMNotifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGVMNotifier.m; sourceTree = "<group>"; };
-		3A98997E1F8CF1690004BC7B /* AGVMPackager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGVMPackager.h; sourceTree = "<group>"; };
-		3A98997F1F8CF1690004BC7B /* AGVMManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGVMManager.h; sourceTree = "<group>"; };
-		3A9899801F8CF1690004BC7B /* AGVMKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGVMKit.h; sourceTree = "<group>"; };
-		3A9899811F8CF1690004BC7B /* AGViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGViewModel.m; sourceTree = "<group>"; };
-		3A9899821F8CF1690004BC7B /* NSString+AGCalculate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AGCalculate.h"; sourceTree = "<group>"; };
-		3A9899831F8CF1690004BC7B /* AGVMSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGVMSection.m; sourceTree = "<group>"; };
-		3A9899841F8CF1690004BC7B /* AGVMManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGVMManager.m; sourceTree = "<group>"; };
-		3A9899851F8CF1690004BC7B /* AGVMPackager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGVMPackager.m; sourceTree = "<group>"; };
-		3A9899861F8CF1690004BC7B /* AGVMProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGVMProtocol.h; sourceTree = "<group>"; };
-		3A9899871F8CF1690004BC7B /* AGVMNotifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGVMNotifier.h; sourceTree = "<group>"; };
-		3A9899881F8CF1690004BC7B /* AGViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGViewModel.h; sourceTree = "<group>"; };
-		3A9899891F8CF1690004BC7B /* NSString+AGCalculate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AGCalculate.m"; sourceTree = "<group>"; };
-		3A98998A1F8CF1690004BC7B /* AGVMKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGVMKeys.h; sourceTree = "<group>"; };
+		490424EA805F96309132566F /* Pods-AGSortedMan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGSortedMan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AGSortedMan/Pods-AGSortedMan.debug.xcconfig"; sourceTree = "<group>"; };
+		A64A1CCC61C2B0BF3A0AA305 /* Pods-AGSortedMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGSortedMan.release.xcconfig"; path = "Pods/Target Support Files/Pods-AGSortedMan/Pods-AGSortedMan.release.xcconfig"; sourceTree = "<group>"; };
+		B73228087ABAE07ADBEE2290 /* libPods-AGSortedMan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AGSortedMan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45449421CF68CFDBD01E42B9 /* libPods-AGSortedMan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +80,8 @@
 				3A1E14621E681E9E005D1323 /* AGSortedMan */,
 				3A1E147C1E681E9E005D1323 /* AGSortedManTests */,
 				3A1E14611E681E9E005D1323 /* Products */,
+				AB4C3010C663AB5010CD63C8 /* Pods */,
+				C91ABC1244D11640CB8327FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,7 +97,6 @@
 		3A1E14621E681E9E005D1323 /* AGSortedMan */ = {
 			isa = PBXGroup;
 			children = (
-				3A98997B1F8CF1690004BC7B /* AGViewModel */,
 				3A1E148C1E682140005D1323 /* Models */,
 				3A1E14881E682109005D1323 /* AGSortedMan */,
 				3A1E14661E681E9E005D1323 /* AppDelegate.h */,
@@ -164,26 +149,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		3A98997B1F8CF1690004BC7B /* AGViewModel */ = {
+		AB4C3010C663AB5010CD63C8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3A98997C1F8CF1690004BC7B /* AGVMSection.h */,
-				3A98997D1F8CF1690004BC7B /* AGVMNotifier.m */,
-				3A98997E1F8CF1690004BC7B /* AGVMPackager.h */,
-				3A98997F1F8CF1690004BC7B /* AGVMManager.h */,
-				3A9899801F8CF1690004BC7B /* AGVMKit.h */,
-				3A9899811F8CF1690004BC7B /* AGViewModel.m */,
-				3A9899821F8CF1690004BC7B /* NSString+AGCalculate.h */,
-				3A9899831F8CF1690004BC7B /* AGVMSection.m */,
-				3A9899841F8CF1690004BC7B /* AGVMManager.m */,
-				3A9899851F8CF1690004BC7B /* AGVMPackager.m */,
-				3A9899861F8CF1690004BC7B /* AGVMProtocol.h */,
-				3A9899871F8CF1690004BC7B /* AGVMNotifier.h */,
-				3A9899881F8CF1690004BC7B /* AGViewModel.h */,
-				3A9899891F8CF1690004BC7B /* NSString+AGCalculate.m */,
-				3A98998A1F8CF1690004BC7B /* AGVMKeys.h */,
+				490424EA805F96309132566F /* Pods-AGSortedMan.debug.xcconfig */,
+				A64A1CCC61C2B0BF3A0AA305 /* Pods-AGSortedMan.release.xcconfig */,
 			);
-			path = AGViewModel;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C91ABC1244D11640CB8327FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B73228087ABAE07ADBEE2290 /* libPods-AGSortedMan.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A1E14821E681E9E005D1323 /* Build configuration list for PBXNativeTarget "AGSortedMan" */;
 			buildPhases = (
+				F72AB07EB5276AC37FEB7E3B /* [CP] Check Pods Manifest.lock */,
 				3A1E145C1E681E9E005D1323 /* Sources */,
 				3A1E145D1E681E9E005D1323 /* Frameworks */,
 				3A1E145E1E681E9E005D1323 /* Resources */,
+				452BB6F527A68E3B9F1A96E3 /* [CP] Embed Pods Frameworks */,
+				0B8FAF54EF15E15A574484B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,17 +267,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B8FAF54EF15E15A574484B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AGSortedMan/Pods-AGSortedMan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		452BB6F527A68E3B9F1A96E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AGSortedMan/Pods-AGSortedMan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F72AB07EB5276AC37FEB7E3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AGSortedMan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A1E145C1E681E9E005D1323 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A9899901F8CF1C20004BC7B /* NSString+AGCalculate.m in Sources */,
-				3A98998F1F8CF1BD0004BC7B /* AGVMPackager.m in Sources */,
-				3A98998E1F8CF1B90004BC7B /* AGVMManager.m in Sources */,
-				3A98998D1F8CF1B50004BC7B /* AGVMSection.m in Sources */,
-				3A98998C1F8CF1B10004BC7B /* AGViewModel.m in Sources */,
-				3A98998B1F8CF1AA0004BC7B /* AGVMNotifier.m in Sources */,
 				3A1E146B1E681E9E005D1323 /* ViewController.m in Sources */,
 				3A1E14681E681E9E005D1323 /* AppDelegate.m in Sources */,
 				3A1E148F1E682140005D1323 /* AGStudentModel.m in Sources */,
@@ -444,6 +472,7 @@
 		};
 		3A1E14831E681E9E005D1323 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 490424EA805F96309132566F /* Pods-AGSortedMan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NYBK4PC9HB;
@@ -457,6 +486,7 @@
 		};
 		3A1E14841E681E9E005D1323 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A64A1CCC61C2B0BF3A0AA305 /* Pods-AGSortedMan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NYBK4PC9HB;
